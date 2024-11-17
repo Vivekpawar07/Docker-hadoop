@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   namenode:
@@ -16,9 +16,6 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
-      placement:
-        constraints:
-          - node.hostname == akswnc4.aksw.uni-leipzig.de
       labels:
         traefik.docker.network: hbase
         traefik.port: 50070
@@ -54,9 +51,6 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
-      placement:
-        constraints:
-          - node.hostname == akswnc4.aksw.uni-leipzig.de
       labels:
         traefik.docker.network: hbase
         traefik.port: 8088
@@ -92,19 +86,18 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      placement:
-        constraints:
-          - node.hostname == akswnc4.aksw.uni-leipzig.de
       labels:
         traefik.docker.network: hbase
         traefik.port: 8188
 
 volumes:
   datanode:
+    driver: local
   namenode:
+    driver: local
   hadoop_historyserver:
+    driver: local
 
 networks:
   hbase:
-    external:
-      name: hbase
+    driver: overlay

@@ -1,0 +1,4 @@
+hello i am kira this is the begginer setup for hadoop and using hdfs , hive and pig in the docker pleas do follow kira 
+hadoop is the greate tool to manage large data 
+hive is good 
+pig is pig
