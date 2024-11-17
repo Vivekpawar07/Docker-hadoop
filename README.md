@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/big-data-europe/Lobby)
 
 # Changes
@@ -61,3 +62,6 @@ The available configurations are:
 * /etc/hadoop/mapred-site.xml  MAPRED_CONF
 
 If you need to extend some other configuration file, refer to base/entrypoint.sh bash script.
+=======
+# Docker-hadoop
+>>>>>>> 1c7f86da27ffc93150b27dd53c81a8e6a6a4897e
