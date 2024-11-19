@@ -1,3 +1,4 @@
+step by step guide https://kira07.medium.com/setting-up-hadoop-with-docker-a-step-by-step-guide-91785edcbc59
 <<<<<<< HEAD
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/big-data-europe/Lobby)
 
